@@ -57,6 +57,7 @@ p  {
   background-image: url(img/flow01.png);
   /* 指定方法（box2の周囲すべてに枠線を設定する場合） */
   background-position: center;
+  background-repeat: no-repeat;
   border: 10px solid #EEEEEE;
   background-size: 280px 150px;
   
@@ -67,6 +68,7 @@ p  {
   background-image: url(img/flow02.png);
   /* 指定方法（box2の周囲すべてに枠線を設定する場合） */
   background-position: center;
+  background-repeat: no-repeat;
   border: 10px solid #EEEEEE;
   background-size: 280px 150px;
   
@@ -77,6 +79,7 @@ p  {
   background-image: url(img/flow03.png);
   /* 指定方法（box2の周囲すべてに枠線を設定する場合） */
   background-position: center;
+  background-repeat: no-repeat;
   border: 10px solid #EEEEEE;
   background-size: 280px 150px;
   
@@ -102,3 +105,64 @@ footer {
     margin-top: 50px;
 }
 
+/* タブレット縦置きサイズ（768px）以下の際に適用される設定 */
+@media screen and (max-width:768px) {
+    
+    .flex {
+        
+        
+	    display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    header {
+        width: 100%;
+    }
+
+
+    .box1 {
+    
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .box2 {
+        width: 100%;
+        height: 140px;
+    
+    }
+    
+    
+    h3 {
+        margin-top: 5px;
+        margin-left: 10px;    
+        margin-bottom: 5px;
+    }
+
+    p {
+       
+        font-size: 15px;
+        margin: 0 auto;
+
+    }
+   
+
+    .image1,.image2,.image3 {
+        background-position: center;
+        width: 90%;
+        margin: auto;
+}
+      
+    
+
+
+
+    
+
+    footer {
+        width: 100%;
+    }
+}
