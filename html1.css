@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 .flex {
@@ -22,73 +21,45 @@ header {
 
 .box1 {
   width: 300px;
-  height: 300px;
   background-color: #EEEEEE;
   position: relative;
+  padding: 10px;
 }
 
-.box2 {
-    height: 150px;
-    width: 300px;
-    background-color: #EEEEEE;
-    /* border: 5px solid #EEEEEE; */
-    padding-top: 5px;
-    font-size: 12px;
-    position: relative;
-    top: 150px;
-    margin: -5px 0px 0px -10px;
-    /* padding: 0px 0px 0px 0px; */
-}
+
 h3 {
-    margin-top: 5px;
-    margin-left: 10px;    
-    margin-bottom: 5px;
+    margin: 15px 0 5px; 
 }
 
-p  {
-     margin-top: 5px;
-     margin-right: 10px;
-     margin-left: 10px;
-}
    
 
 .image1 {
-
   background-image: url(img/flow01.png);
   /* 指定方法（box2の周囲すべてに枠線を設定する場合） */
   background-position: center;
   background-repeat: no-repeat;
-  border: 10px solid #EEEEEE;
-  background-size: 280px 150px;
-  
+  height:  150px;
 }
 
 .image2 {
-
   background-image: url(img/flow02.png);
   /* 指定方法（box2の周囲すべてに枠線を設定する場合） */
   background-position: center;
   background-repeat: no-repeat;
-  border: 10px solid #EEEEEE;
-  background-size: 280px 150px;
-  
+  height: 150px;
 }
 
 .image3 {
-
   background-image: url(img/flow03.png);
   /* 指定方法（box2の周囲すべてに枠線を設定する場合） */
   background-position: center;
   background-repeat: no-repeat;
-  border: 10px solid #EEEEEE;
-  background-size: 280px 150px;
-  
+  height: 150px;
 }
 
 
 
 .box4 {
-    
     width: 45px;
     height: 25px;
     color: white;
@@ -109,60 +80,48 @@ footer {
 @media screen and (max-width:768px) {
     
     .flex {
-        
-        
-	    display: flex;
+	    /*display: flex;*/
         gap: 20px;
         justify-content: center;
-        flex-direction: column;
-    }
+        /*flex-direction: column;*/
+        
+}
 
     header {
         width: 100%;
-    }
+}
 
 
     .box1 {
-    
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
-    }
+}
 
     .box2 {
         width: 100%;
         height: 140px;
-    
-    }
-    
+}
     
     h3 {
         margin-top: 5px;
         margin-left: 10px;    
         margin-bottom: 5px;
-    }
+}
 
     p {
-       
         font-size: 15px;
         margin: 0 auto;
-
-    }
+}
    
 
     .image1,.image2,.image3 {
-        background-position: center;
+        background-position: bottom;
         width: 90%;
-        margin: auto;
+        margin: 0 auto;
 }
-      
-    
-
-
-
-    
 
     footer {
         width: 100%;
-    }
+}
 }
